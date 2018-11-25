@@ -10,7 +10,12 @@
               <div class="container">
                   <div class="menu-top">
                       <a class="logo" href="#">Техномарт</a>
-                      <!-- форма поиска -->
+                      <form class="form-search" action="#">
+                          <p>
+                              <label class="visually-hidden" for="search-site">Поиск</label>
+                              <input class="search-icon" type="search" name="search" placeholder="Поиск:">
+                          </p>
+                      </form>
                       <div class="menu-bookmarks">
                           <a href="#">Закладки:0</a>
                       </div>
@@ -32,7 +37,7 @@
                   </h1>
                   <div class"menu-contacts">
                       <p class="menu-number">
-                          <a href="#">+7 (812) 555-05-55</a>
+                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                       <p class="menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                   </div>
@@ -44,6 +49,29 @@
                   </div>
               </div>
           </div>
+          <section class="modal modal-login">
+              <h2>Личный кабинет</h2>
+              <p>Введите свой логин и пароль.</p>
+              <form class="login-form" action="#" method="post">
+                  <p>
+                      <label class="visually-hidden" for="user-login">Логин:</label>
+                      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+
+                  </p>
+                  <p>
+                      <label class="visually-hidden" for="user-password">Пароль:</label>
+                      <input class="password-icon-user" id="user-password" type="text" name="password" placeholder="Пароль">
+                  </p>
+                  <p class="login-passwod-info">
+                      <label class="login-checkbox">
+                          <input type="checkbox" name="remember">Запомнить меня
+                      </label>
+                      <a href="#">Я забыл пароль!</a>
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+              </form>
+              <button class="modal-close" type="button">Закрыть</button>
+          </section>
           <nav>
               <ul class="site-navigation">
                   <li>
@@ -91,13 +119,42 @@
                       <h2>Контакты</h2>
                       <p>Вы можете забрать товар сами,
                       заехав в наш офис.</p>
-                      <img src="img/map-small.jpg" height="158" width="300" alt="Карта">
+                      <a href="#">
+                          <img src="img/map-small.jpg" width="300" height="158" alt="город
+                          Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+                      </a>
                       <p>
                           <a href="#">Заблудились? Напишите нам!</a>
                       </p>
                   </div>
               </div>
           </div>
+          <section class="modal-map">
+              <p>
+                <img src="img/map-big.jpg" width="940" height="417" alt="город
+                Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+              </p>
+              <button class="modal-close" type="button"> Закрыть</button>
+          </section>
+          <section class="modal-write-to">
+              <h2 class="visually-hidden">Напишите нам, если заблудились</h2>
+              <form class="write-to-form" action="#" method="post">
+                  <p>
+                      <label class="user-data" for="user-name">Ваше имя:</label>
+                      <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+                  </p>
+                  <p>
+                      <label class="user-data" for="user-email">Ваше e-mail:</label>
+                      <input id="user-email" type="text" name="name" placeholder="email@example.com">
+                  </p>
+                  <p>
+                      <label class="user-data" for="user-text">Текст письма:</label>
+                      <textarea id="user-text" cols="50" rows="8" placeholder="В свободной форме"></textarea>
+                  </p>
+                  <button class="button-modal" type="submit">Отправить</button>
+              </form>
+              <button class="modal-close" type="button">Закрыть</button>
+          </section>
       </main>
       <footer>
           <div class="footer-top">
@@ -107,7 +164,7 @@
                   </div>
                   <div class="footer-address">
                       <p class="footer-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                          <a href="#">+7 (812) 555-05-55</a>
+                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                   </div>
                   <div class="footer-menu">
@@ -164,7 +221,7 @@
                   </div>
                   <p class="footer-copyright">
                       <b>Обратная связь:</b>
-                      <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                      <a class="button" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                   </p>
                   <p class="footer-copyright">
                       <b>Разработано -</b>
