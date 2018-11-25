@@ -10,7 +10,12 @@
               <div class="container">
                   <div class="menu-top">
                       <a class="logo" href="#">Техномарт</a>
-                      <!-- форма поиска -->
+                      <form class="form-search" action="#">
+                          <p>
+                              <label class="visually-hidden" for="search-site">Поиск</label>
+                              <input class="search-icon" type="search" name="search" placeholder="Поиск:">
+                          </p>
+                      </form>
                       <div class="menu-bookmarks">
                           <a href="#">Закладки:0</a>
                       </div>
@@ -32,7 +37,7 @@
                   </p>
                   <div class"menu-contacts">
                       <p class="menu-number">
-                          <a href="#">+7 (812) 555-05-55</a>
+                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                       <p class="menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                   </div>
@@ -75,7 +80,7 @@
       <main class="container">
           <ul class="breadcrumbs">
               <li>
-                  <a href="index.html"><img src="img/home.svg" href="index.html" alt="Домой"></a>
+                  <a href="index.html"><img src="img/icon-home.svg" href="index.html" alt="Домой"></a>
               </li>
               <li>
                   <a href="#">Каталог</a>
@@ -91,8 +96,48 @@
               Перфораторы
           </h1>
           <section class="filtres">
-              <h2 class="filtres-hidden">Производители</h2>
-              <!-- здесь булет форма -->
+              <h2 class="visually-hidden">Производители</h2>
+              <form class="filter" action="#" method="get">
+                  <fieldset>
+                      <legend>Производители:</legend>
+                      <ul>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                              <label for="filter-bosch">BOSCH</label>
+                          </li>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="insterskol" id="filter-insterskol">
+                              <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                          </li>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                              <label for="filter-makita">MAKITA</label>
+                          </li>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                              <label for="dewalt">DEWALT</label>
+                          </li>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                              <label for="filter-hitachi">HITACHI</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Питание:</legend>
+                      <ul>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="battery" id="filter-battery">
+                              <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+                          </li>
+                          <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="power-mains" id="filter-power-mains">
+                              <label for="filter-power-mains">СЕТЕВЫЕ</label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <button type="submit" class="filter-button button">Показать</button>
+              </form>
           </section>
           <section class="catalog">
               <h2 class="catalog-hidden">Список перфораторов</h2>
@@ -173,6 +218,17 @@
                   <a class="button-buy" href="#">12500 Р.</a>
               </li>
           </section>
+          <section class="modal-product-basket">
+              <p>
+                  <img src="img/icon-6.svg" width="66" height="66">
+                  <span class="product-in-basket">Товар добавлен в корзину!</span>
+              </p>
+              <p>
+                  <a class="button-order" href="#">Оформить заказ</a>
+                  <a class="button-shopping" href="#">Продолжить покупки</a>
+              </p>
+              <button class="modal-close" type="button">Закрыть</button>
+          </section>
       </main>
       <footer>
           <div class="footer-top">
@@ -182,7 +238,7 @@
                   </div>
                   <div class="footer-address">
                       <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                          <a href="#">+7 (812) 555-05-55</a>
+                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                   </div>
                   <div class="footer-menu">
@@ -239,7 +295,7 @@
                   </div>
                   <p class="footer-copyright">
                       <b>Обратная связь:</b>
-                      <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                      <a class="button" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                   </p>
                   <p class="footer-copyright">
                       <b>Разработано -</b>
