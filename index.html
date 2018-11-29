@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин "Техномарт"</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -17,41 +20,41 @@
                           </p>
                       </form>
                       <div class="menu-bookmarks">
-                          <a href="#">Закладки:0</a>
+                          <a class="bookmarks-link" href="#">Закладки:0</a>
                       </div>
                       <div class="menu-basket">
-                          <a href="#">Корзина:0</a>
+                          <a class="basket-link" href="#">Корзина:0</a>
                       </div>
                       <div class="menu-order">
-                          <a href="#">Оформить заказ</a>
+                          <a class="order-link" href="#">Оформить заказ</a>
                       </div>
                   </div>
               </div>
           </div>
           <div class="menu-header">
               <div class="container">
-                  <h1>
+                  <h1 class="main-description">
                       Интернет-магазин <br>
                       строительных материалов <br>
                       и инструментов для ремонта
                   </h1>
                   <div class"menu-contacts">
                       <p class="menu-number">
-                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
+                          <a class="menu-number-link" href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                       <p class="menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                   </div>
                   <div class="menu-come-in">
-                      <a href="#">Войти</a>
+                      <a class="come-in-link" href="#">Войти</a>
                   </div>
                   <div class="menu-registration">
-                      <a href="#">Регистрация</a>
+                      <a class="registration-link" href="#">Регистрация</a>
                   </div>
               </div>
           </div>
           <section class="modal modal-login">
-              <h2>Личный кабинет</h2>
-              <p>Введите свой логин и пароль.</p>
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <p class="visually-hidden">Введите свой логин и пароль.</p>
               <form class="login-form" action="#" method="post">
                   <p>
                       <label class="visually-hidden" for="user-login">Логин:</label>
@@ -72,7 +75,7 @@
               </form>
               <button class="modal-close" type="button">Закрыть</button>
           </section>
-          <nav>
+          <nav class="main-navigation">
               <ul class="site-navigation">
                   <li>
                       <a href="index.html">Главная</a>
@@ -102,29 +105,29 @@
           <div class="info-contacts">
               <div class="container">
                   <div class="company-info">
-                      <h2 class="">
+                      <h2 class="company-headline">
                       Компания "Техномарт"
                       </h2>
-                      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-                      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+                      <p class="company-descriptoin">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+                      <p class="company-descriptoin">Мы можем доставить ваш товар в самые отдаленные точки России!
                       Техномарт работает со многими транспортными компаниями:</p>
-                      <ul>
+                      <ul class="transport-company">
                           <li>Деловые линии</li>
                           <li>Автотрейдинг</li>
                           <li>ЖелДорЭкспедиция</li>
                       </ul>
-                      <a href="#">О компании</a>
+                      <a class="more-company" href="#">Подробнее о компании</a>
                   </div>
                   <div>
-                      <h2>Контакты</h2>
-                      <p>Вы можете забрать товар сами,
+                      <h2 class="company-headline">Контакты</h2>
+                      <p class="company-descriptoin">Вы можете забрать товар сами,
                       заехав в наш офис.</p>
                       <a href="#">
                           <img src="img/map-small.jpg" width="300" height="158" alt="город
                           Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
                       </a>
                       <p>
-                          <a href="#">Заблудились? Напишите нам!</a>
+                          <a class="more-company" href="#">Заблудились? Напишите нам!</a>
                       </p>
                   </div>
               </div>
@@ -138,7 +141,7 @@
           </section>
           <section class="modal-write-to">
               <h2 class="visually-hidden">Напишите нам, если заблудились</h2>
-              <form class="write-to-form" action="#" method="post">
+              <form class="login-form" action="#" method="post">
                   <p>
                       <label class="user-data" for="user-name">Ваше имя:</label>
                       <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -151,7 +154,7 @@
                       <label class="user-data" for="user-text">Текст письма:</label>
                       <textarea id="user-text" cols="50" rows="8" placeholder="В свободной форме"></textarea>
                   </p>
-                  <button class="button-modal" type="submit">Отправить</button>
+                  <button class="button" type="submit">Отправить</button>
               </form>
               <button class="modal-close" type="button">Закрыть</button>
           </section>
@@ -160,7 +163,7 @@
           <div class="footer-top">
               <div class="container">
                   <div class="footer-logo">
-                      <a href="#">Техномарт</a>
+                      <a class="logo" href="#">Техномарт</a>
                   </div>
                   <div class="footer-address">
                       <p class="footer-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -170,33 +173,33 @@
                   <div class="footer-menu">
                       <ul class="footer-menu-top">
                           <li>
-                              <a href="#">Компания</a>
+                              <a class="footer-link-top" href="#">Компания</a>
                           </li>
                           <li>
-                              <a href="#">Новости</a>
+                              <a class="footer-link-top" href="#">Новости</a>
                           </li>
                           <li>
-                              <a href="#">Каталог</a>
+                              <a class="footer-link-top" href="#">Каталог</a>
                           </li>
                           <li>
-                              <a href="#">Доставка</a>
+                              <a class="footer-link-top" href="#">Доставка</a>
                           </li>
                           <li>
-                              <a href="#">Контакты</a>
+                              <a class="footer-link-top" href="#">Контакты</a>
                           </li>
                       </ul>
                       <ul class="footer-menu-bottom">
                           <li>
-                              <a href="#">Материалы</a>
+                              <a class="footer-link-bottom" href="#">Материалы</a>
                           </li>
                           <li>
-                              <a href="#">Техника</a>
+                              <a class="footer-link-bottom" href="#">Техника</a>
                           </li>
                           <li>
-                              <a href="#">Инструмент</a>
+                              <a class="footer-link-bottom" href="#">Инструмент</a>
                           </li>
                           <li>
-                              <a href="#">Спецпредложения</a>
+                              <a class="footer-link-bottom" href="#">Спецпредложения</a>
                           </li>
                       </ul>
                   </div>
@@ -209,23 +212,23 @@
                   <div class="footer-social">
                       <ul>
                           <li>
-                              <a class="social-button" href="#">Вконтакте</a>
+                              <a href="#">Вконтакте</a>
                           </li>
                           <li>
-                              <a class="social-button" href="#">Фейсбук</a>
+                              <a href="#">Фейсбук</a>
                           </li>
                           <li>
-                              <a class="social-button" href="#">Инстаграм</a>
+                              <a href="#">Инстаграм</a>
                           </li>
                       </ul>
                   </div>
                   <p class="footer-copyright">
                       <b>Обратная связь:</b>
-                      <a class="button" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                      <a class="feedback" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                   </p>
                   <p class="footer-copyright">
                       <b>Разработано -</b>
-                      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                      <a class="feedback" href="https://htmlacademy.ru">HTML Academy</a>
                   </p>
               </div>
           </div>
