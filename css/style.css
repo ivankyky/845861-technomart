@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 18px;
     background-color: #ffffff
 }
 
@@ -12,7 +12,6 @@ a {
 
 .button {
     font-size: 14px;
-    line-height: 18px;
     background-color: #ee3643;
     text-align: center;
     color: #ffffff;
@@ -37,7 +36,6 @@ a {
 .top-site-menu {
     background-color: #293449;
     font-size: 17px;
-    line-height: 18px;
 }
 
 .top-site-menu a {
@@ -65,7 +63,6 @@ a.logo:active {
 
 .form-search {
     font-size: 17px;
-    line-height: 18px;
 }
 
 .search-icon {
@@ -89,7 +86,6 @@ a.logo:active {
 
 a.bookmarks-link {
     font-size: 17px;
-    line-height: 18px;
     background-color:#293449;
 }
 
@@ -105,7 +101,6 @@ a.bookmarks-link:active {
 
 a.basket-link {
     font-size: 17px;
-    line-height: 18px;
     background-color:#293449;
 }
 
@@ -124,7 +119,6 @@ a.basket-link:active {
 
 a.order-link {
     font-size: 17px;
-    line-height: 18px;
     background-color: #63a63e;
 }
 
@@ -207,7 +201,6 @@ a.registration-link:active {
 
 .user-cabinet a {
     font-size: 16px;
-    line-height: 18px;
     color: #32425c;
     text-decoration: underline;
 }
@@ -267,7 +260,6 @@ a.registration-link:active {
 .breadcrumbs li {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
-    line-height: 18px;
     text-transform: uppercase;
 }
 
@@ -364,7 +356,6 @@ a.registration-link:active {
     font-weight: bold;
     color: #999999;
     font-size: 17px;
-    line-height: 18px;
     text-decoration: line-through;
 }
 
@@ -401,7 +392,6 @@ a.button-buy  {
 
 a.more-company {
     font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
@@ -453,7 +443,6 @@ a.footer-link-bottom:active {
 
 .footer-bottom {
     font-size: 16px;
-    line-height: 18px;
     color: #ffffff;
     background-color: #293449;
 }
@@ -486,7 +475,6 @@ a.feedback:active {
 /* всплывающие окна */
 
 .modal {
-    line-height: 18px;
     background-color: #ffffff;
 }
 
@@ -509,10 +497,6 @@ a.feedback:active {
   border-color: #ee3643;
 }
 
-.user-data {
-    line-height: 18px;
-}
-
 /* товар в корзине */
 
 .product-in-basket {
@@ -522,7 +506,6 @@ a.feedback:active {
 
 a.button-order {
     font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
@@ -538,7 +521,6 @@ a.button-order:active {
 
 a.button-shopping {
     font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
