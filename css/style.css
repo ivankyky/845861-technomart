@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Cuprum", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 23px;
     background-color: #ffffff
 }
@@ -356,7 +356,6 @@ a.registration-link:active {
 .catalog-item h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
-    font-size: 18px;
     list-style: 20px;
 }
 
@@ -396,7 +395,6 @@ a.button-buy  {
 }
 
 .transport-company {
-    font-size: 18px;
     line-height: 20px;
     list-style: none;
 }
@@ -420,7 +418,6 @@ a.more-company:active {
 /* подвал */
 
 .footer-top {
-    font-size: 18px;
     line-height: 24px;
     color: #ffffff;
     background-color: #32425c;
@@ -489,7 +486,6 @@ a.feedback:active {
 /* всплывающие окна */
 
 .modal {
-    font-size: 18px;
     line-height: 18px;
     background-color: #ffffff;
 }
@@ -514,7 +510,6 @@ a.feedback:active {
 }
 
 .user-data {
-    font-size: 18px;
     line-height: 18px;
 }
 
