@@ -11,7 +11,7 @@
       <header class="main-header">
           <div class="top-site-menu">
               <div class="container">
-                  <div class="menu-top">
+                  <div class="menu-top-wrapper">
                       <a class="logo" href="#">Техномарт</a>
                       <form class="form-search" action="#">
                           <p>
@@ -33,77 +33,56 @@
           </div>
           <div class="menu-header">
               <div class="container">
-                  <h1 class="main-description">
-                      Интернет-магазин <br>
-                      строительных материалов <br>
-                      и инструментов для ремонта
-                  </h1>
-                  <div class"menu-contacts">
-                      <p class="menu-number">
-                          <a class="menu-number-link" href="tel: +78125550555">+7 (812) 555-05-55</a>
-                      </p>
-                      <p class="menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                  </div>
-                  <div class="menu-come-in">
-                      <a class="come-in-link" href="#">Войти</a>
-                  </div>
-                  <div class="menu-registration">
-                      <a class="registration-link" href="#">Регистрация</a>
+                  <div class="menu-header-wrapper">
+                      <h1 class="main-description">
+                          Интернет-магазин <br>
+                          строительных материалов <br>
+                          и инструментов для ремонта
+                      </h1>
+                      <div class="menu-contacts">
+                          <p class="menu-number">
+                              <a class="menu-number-link" href="tel: +78125550555">+7 (812) 555-05-55</a>
+                          </p>
+                          <p class="menu-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                      </div>
+                      <div class="login-wrapper">
+                         <a class="come-in-link" href="#">Войти</a>
+                         <a class="registration-link" href="#">Регистрация</a>
+                      </div>
                   </div>
               </div>
           </div>
-          <section class="modal modal-login">
-              <h2 class="visually-hidden">Личный кабинет</h2>
-              <p class="visually-hidden">Введите свой логин и пароль.</p>
-              <form class="login-form" action="#" method="post">
-                  <p>
-                      <label class="visually-hidden" for="user-login">Логин:</label>
-                      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-
-                  </p>
-                  <p>
-                      <label class="visually-hidden" for="user-password">Пароль:</label>
-                      <input class="password-icon-user" id="user-password" type="text" name="password" placeholder="Пароль">
-                  </p>
-                  <p class="login-passwod-info">
-                      <label class="login-checkbox">
-                          <input type="checkbox" name="remember">Запомнить меня
-                      </label>
-                      <a href="#">Я забыл пароль!</a>
-                  </p>
-                  <button class="button" type="submit">Войти</button>
-              </form>
-              <button class="modal-close" type="button">Закрыть</button>
-          </section>
           <nav class="main-navigation">
-              <ul class="site-navigation">
-                  <li>
-                      <a href="index.html">Главная</a>
-                  </li>
-                  <li>
-                      <a href="#company">Компания</a>
-                  </li>
-                  <li>
-                      <a href="catalog.html">Каталог</a>
-                  </li>
-                  <li>
-                      <a href="#">Новости</a>
-                  </li>
-                  <li>
-                      <a href="#">Спецпредложения</a>
-                  </li>
-                  <li>
-                      <a href="#delivery">Доставка</a>
-                  </li>
-                  <li>
-                      <a href="#contacts">Контакты</a>
-                  </li>
-              </ul>
+              <div class="main-navigation-wrapper">
+                  <ul class="site-navigation">
+                      <li>
+                          <a href="index.html">Главная</a>
+                      </li>
+                      <li>
+                          <a href="#company">Компания</a>
+                      </li>
+                      <li>
+                          <a href="catalog.html">Каталог</a>
+                      </li>
+                      <li>
+                          <a href="#">Новости</a>
+                      </li>
+                      <li>
+                          <a href="#">Спецпредложения</a>
+                      </li>
+                      <li>
+                          <a href="#delivery">Доставка</a>
+                      </li>
+                      <li>
+                          <a href="#contacts">Контакты</a>
+                      </li>
+                  </ul>
+              </div>
           </nav>
       </header>
       <main>
-          <div class="info-contacts">
-              <div class="container">
+          <div class="container">
+              <div class="info-contacts">
                   <div class="company-info">
                       <h2 class="company-headline">
                       Компания "Техномарт"
@@ -158,16 +137,37 @@
               </form>
               <button class="modal-close" type="button">Закрыть</button>
           </section>
+          <section class="modal modal-login">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <p class="visually-hidden">Введите свой логин и пароль.</p>
+              <form class="login-form" action="#" method="post">
+                  <p>
+                      <label class="visually-hidden" for="user-login">Логин:</label>
+                      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+
+                  </p>
+                  <p>
+                      <label class="visually-hidden" for="user-password">Пароль:</label>
+                      <input class="password-icon-user" id="user-password" type="text" name="password" placeholder="Пароль">
+                  </p>
+                  <p class="login-passwod-info">
+                      <label class="login-checkbox">
+                          <input type="checkbox" name="remember">Запомнить меня
+                      </label>
+                      <a href="#">Я забыл пароль!</a>
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+              </form>
+              <button class="modal-close" type="button">Закрыть</button>
+          </section>
       </main>
       <footer>
           <div class="footer-top">
               <div class="container">
                   <div class="footer-logo">
                       <a class="logo" href="#">Техномарт</a>
-                  </div>
-                  <div class="footer-address">
-                      <p class="footer-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                          <a href="tel: +78125550555">+7 (812) 555-05-55</a>
+                      <p class="footer-address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                      <a href="tel: +78125550555">+7 (812) 555-05-55</a>
                       </p>
                   </div>
                   <div class="footer-menu">
