@@ -9,17 +9,6 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
-}
-
 .button {
     font-size: 14px;
     background-color: #ee3643;
@@ -434,11 +423,6 @@ a.more-company:active {
 
 /* меню подвал*/
 
-.footer-menu-top,
-.footer-menu-bottom {
-    list-style: none;
-}
-
 a.footer-link-bottom {
     color: #ffd180;
 }
@@ -596,18 +580,18 @@ body {
     margin: 0;
     padding: 0;
 }
-.main-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 940px;
-    margin: auto;
+
+.site-navigation {
+    text-align: center;
 }
 
-.main-navigation-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation a {
+    display: block;
+    padding: 19px 33px;
 }
 
 .menu-header-wrapper {
@@ -646,17 +630,36 @@ body {
     width: 380px;
 }
 
+.footer-menu {
+    margin-top: 35px;
+    width: 570px;
+}
+
 .footer-menu-top {
-    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 35px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-top li {
+    width: 560px;
+    padding-left: 50px;
 }
 
 .footer-menu-bottom {
-    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-menu-bottom li {
+    list-style: none;
+    padding-left: 50px;
 }
 
 .footer-bottom .container {
     display: flex;
-
 }
 
 .protect {
