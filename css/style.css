@@ -581,16 +581,23 @@ body {
     padding: 0;
 }
 
+
 .site-navigation {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
 }
 
 .site-navigation li {
-    display: inline-block;
+
 }
 
 .site-navigation a {
     display: block;
+    vertical-align: middle;
     padding: 19px 33px;
 }
 
